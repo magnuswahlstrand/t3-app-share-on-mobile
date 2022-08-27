@@ -3,13 +3,27 @@
   "name": "Minimal Progressive Web App",
   "icons": [
     {
-      "src": "/android-chrome-512x512.png",
+      "src": "/icons/android-512.png",
       "sizes": "512x512",
       "type": "image/png"
+    },
+    {
+      "src": "/icons/maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ],
   "start_url": "/",
   "theme_color": "#db7093",
   "background_color": "#222222",
-  "display": "standalone"
+  "display": "standalone",
+  "share_target": {
+    "action": "/",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  }
 }
