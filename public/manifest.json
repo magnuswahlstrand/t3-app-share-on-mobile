@@ -19,7 +19,7 @@
   "background_color": "#222222",
   "display": "standalone",
   "share_target": {
-    "action": "/",
+    "action": "/share",
     "params": {
       "title": "title",
       "text": "text",
