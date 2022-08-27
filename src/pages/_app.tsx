@@ -1,8 +1,12 @@
 import "../styles/globals.css";
-import type { AppType } from "next/dist/shared/lib/utils";
 
-const MyApp: AppType = ({ Component, pageProps }) => {
-  return <Component {...pageProps} />;
-};
+import Layout from '../components/layout'
+import {AppProps} from "next/app";
 
-export default MyApp;
+export default function MyApp({Component, pageProps}: AppProps) {
+    return (
+        <Layout>
+            <Component {...pageProps} />
+        </Layout>
+    )
+}
